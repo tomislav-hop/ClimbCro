@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ClimbCro</string>
+    <string name="title_section1">Moje rute</string>
+    <string name="title_section2">Trenutna ruta</string>
+    <string name="title_section3">Detalji rute</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Postavke</string>
+    <string name="action_settings">About us</string>
+    <string name="gumb_prijava">Pošalji</string>
+     <string name="kor_ime">Korisničko ime</string>
+     
+     <string name="kor_ime_hint">Unesite korisničko ime</string>
+     <string name="lozinka">Lozinka</string>
+     <string name="lozinka_hint">Unesite lozinku</string>
+      <string name="moje_rute">Moje rute</string>
+      
+       <string name="trenutna_ruta">Trenutna ruta</string>
+       <string name="detalji_rute">Detalji rute</string>
+    
+
+</resources>

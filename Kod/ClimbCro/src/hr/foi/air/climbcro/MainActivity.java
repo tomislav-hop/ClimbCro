@@ -20,6 +20,13 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 
+/**
+ * Glavna klasa u kojoj se pozivaju ostale klase aplikacije i 
+ * definiraju se glavne funkcionalnosti.
+ * @author H3
+ *
+ */
+
 public class MainActivity extends Activity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
@@ -136,6 +143,11 @@ public class MainActivity extends Activity
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
             View rootView = null; 
+
+            /**
+             * Provjera koji element u izborniku je odabra
+             * Ovisno o odabranom izborniku, otvara se odgovarajuæi layout
+             */
             int i = getArguments().getInt(ARG_SECTION_NUMBER);
             
             if (i == 1){

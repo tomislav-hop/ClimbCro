@@ -11,6 +11,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+/**
+ * Klasa koja se pokreæe prilikom otvaranja aplikacije.
+ * U ovoj klasi provjerava se ispravnos podataka za prijavu u aplikaciju
+ * te se preusmjerava na glavnu klasu aplikacije.
+ * @author Hrgar
+ *
+ */
+
 public class LoginActivity extends Activity {
 	
 
@@ -22,6 +30,12 @@ public class LoginActivity extends Activity {
 	}
 
 	@Override
+	
+	/**
+	 * Definira se listener za gumb za login te se prilikom pritiska hgumba pokrece 
+	 * metoda za provjeru podataka ili klikom na gumb za registraciju se 
+	 * pokrece metoda za otvaranje registracijske forme.
+	 */
 	protected void onResume() {
 		
 		Button btnLogin = (Button) findViewById(R.id.logIn);
@@ -44,6 +58,11 @@ public class LoginActivity extends Activity {
 		});
 		super.onResume();
 	}
+	
+	/**
+	 * Provjera korisnièkog imena
+	 * @author H3
+	 */
 	
 	private void checkLogin(){
 		String user = "";
@@ -75,6 +94,10 @@ public class LoginActivity extends Activity {
 		}
 	}
 	
+	
+	/**
+	 * Otvaranje klase za registraciju.
+	 */
 	private void register(){
 		Intent i = new Intent(this, RegistrationActivity.class);
     	startActivity(i);

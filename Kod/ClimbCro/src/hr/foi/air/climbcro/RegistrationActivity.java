@@ -6,6 +6,13 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+/**
+ * Klasa za registriranje novog korisnika.
+ * @author Hrgar
+ *
+ */
+
+
 public class RegistrationActivity extends Activity {
 	
 	protected void onCreate(Bundle savedInstanceState) {

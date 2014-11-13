@@ -16,10 +16,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-
 
 /**
  * Glavna klasa u kojoj se pozivaju ostale klase aplikacije i 
@@ -28,9 +28,9 @@ import android.widget.TextView;
  *
  */
 
-public class MainActivity extends Activity
+public class MainActivity extends Activity 
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
-
+	private static Context mContext;
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
      */
@@ -42,11 +42,12 @@ public class MainActivity extends Activity
     private CharSequence mTitle;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+    protected void onCreate(Bundle savedInstanceState) {        
+    	super.onCreate(savedInstanceState);
+    	mContext = this.getApplicationContext();
+    	setContentView(R.layout.activity_main);
         
+      
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getFragmentManager().findFragmentById(R.id.navigation_drawer);
         mTitle = getTitle();
@@ -57,6 +58,8 @@ public class MainActivity extends Activity
                 
                 (DrawerLayout) findViewById(R.id.drawer_layout));
     }
+    
+    
 
     @Override
     public void onNavigationDrawerItemSelected(int position) {
@@ -159,28 +162,33 @@ public class MainActivity extends Activity
             int i = getArguments().getInt(ARG_SECTION_NUMBER);
             
             if (i == 1){
+            	
+            	//onDestroyView();
             	rootView = inflater.inflate(R.layout.fragment_main, container, false);
             }
             if (i == 2){
+            	//onDestroyView();
             	rootView = inflater.inflate(R.layout.tab2, container, false);
             }if (i==3){
             	rootView = inflater.inflate(R.layout.detalji_rute, container, false);
             }
             if (i==4){
+            	//karta();
+            	//onDestroyView();
             	rootView = inflater.inflate(R.layout.kreiraj_rutu, container, false);
             }
             if (i==5){
-            	izlaz();
+            	karta();
             }
             
             return rootView;
         }
         
-    	private void izlaz(){
-    		Intent intent = new Intent(Intent.ACTION_MAIN);
-        	intent.addCategory(Intent.CATEGORY_HOME);
-        	intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        	startActivity(intent);
+        //Funkcija koja kartu otvara u novom activitiyu
+        
+    	private void karta(){
+    		Intent i = new Intent(mContext, MapActivity.class);
+        	startActivity(i);
     		
     	}
 
@@ -192,4 +200,21 @@ public class MainActivity extends Activity
         }
     }
 
+    public static Context getAppContext(){
+        return mContext;
+     }
+    
+    
+    //FUnkcija koja brise staru kartu i nakon ponovnog otvaranja opet kreira mapu(NE RADI)
+    /*
+    protected void onDestroyView() {
+    	FragmentManager fragmentManager = getFragmentManager();
+    	Fragment oldMapFrag = getFragmentManager().findFragmentById(R.id.map);
+    	if(oldMapFrag != null) {
+    	    getFragmentManager().beginTransaction().remove(oldMapFrag).commit();
+    	    
+    	    fragmentManager.popBackStack();
+    	    
+    	}
+    }  	*/
 }

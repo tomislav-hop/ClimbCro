@@ -5,6 +5,8 @@
     <string name="title_section1">Moje rute</string>
     <string name="title_section2">Trenutna ruta</string>
     <string name="title_section3">Detalji rute</string>
+     <string name="title_section4">Kreiraj rutu</string>
+      <string name="title_section5">Exit</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Postavke</string>

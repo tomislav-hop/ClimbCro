@@ -6,6 +6,7 @@ import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -53,6 +54,7 @@ public class MainActivity extends Activity
         // Set up the drawer.
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
+                
                 (DrawerLayout) findViewById(R.id.drawer_layout));
     }
 
@@ -77,6 +79,12 @@ public class MainActivity extends Activity
                 break;
             case 3:
                 mTitle = getString(R.string.title_section3);
+                break;
+            case 4:
+                mTitle = getString(R.string.title_section4);
+                break;
+            case 5:
+                mTitle = getString(R.string.title_section5);
                 break;
         }
     }
@@ -158,9 +166,23 @@ public class MainActivity extends Activity
             }if (i==3){
             	rootView = inflater.inflate(R.layout.detalji_rute, container, false);
             }
+            if (i==4){
+            	rootView = inflater.inflate(R.layout.kreiraj_rutu, container, false);
+            }
+            if (i==5){
+            	izlaz();
+            }
             
             return rootView;
         }
+        
+    	private void izlaz(){
+    		Intent intent = new Intent(Intent.ACTION_MAIN);
+        	intent.addCategory(Intent.CATEGORY_HOME);
+        	intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        	startActivity(intent);
+    		
+    	}
 
         @Override
         public void onAttach(Activity activity) {

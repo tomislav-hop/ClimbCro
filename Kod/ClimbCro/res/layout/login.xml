@@ -5,18 +5,68 @@
     android:background="#ffffff"
     android:orientation="vertical" >
 
+    <Button
+        android:id="@+id/gumb_registriraj_se"
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:textColor="#FFFFFF"
+        android:text="Registriraj se" />
+
     <EditText
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/userpass"
+        android:layout_above="@+id/textView2"
         android:layout_alignParentLeft="true"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="19dp"
         android:ems="10"
         android:hint="@string/kor_ime_hint" >
 
         <requestFocus />
     </EditText>
+
+    <Button
+        android:id="@+id/logIn"
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/gumb_registriraj_se"
+        android:layout_alignLeft="@+id/gumb_registriraj_se"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/gumb_prijava"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/lozinka"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#2F9146" />
+
+    <EditText
+        android:id="@+id/userpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:ems="10"
+        android:hint="@string/lozinka_hint"
+        android:inputType="textPassword" />
 
     <TextView
         android:id="@+id/textView1"
@@ -24,56 +74,20 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/username"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="14dp"
         android:text="@string/kor_ime"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <EditText
-        android:id="@+id/userpass"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/logIn"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="31dp"
-        android:ems="10"
-        android:hint="@string/lozinka_hint"
-        android:inputType="textPassword" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#2F9146" />
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_above="@+id/textView1"
-        android:layout_alignParentTop="true"
-        android:contentDescription="logo"
-        android:src="@drawable/rock_climb" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/userpass"
         android:layout_centerHorizontal="true"
-        android:text="@string/lozinka"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <Button
-        android:id="@+id/logIn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="35dp"
-        android:layout_marginLeft="58dp"
-        android:text="@string/gumb_prijava" />
-
-    <Button
-        android:id="@+id/gumb_registriraj_se"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/logIn"
-        android:layout_marginLeft="38dp"
-        android:layout_toRightOf="@+id/logIn"
-        android:text="Registriraj se" />
+         android:layout_alignParentTop="true"
+          android:layout_marginTop="16dp"
+        android:src="@drawable/icon" />
+    
+    
 
 </RelativeLayout>

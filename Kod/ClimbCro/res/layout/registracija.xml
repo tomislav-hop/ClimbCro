@@ -15,7 +15,7 @@
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:text="Registriraj se"
+        android:text="@string/registracija"
         android:textColor="#FFFFFF" />
 
     <EditText
@@ -26,7 +26,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="14dp"
         android:ems="10"
-        android:hint="Unesite lozinku" />
+        android:hint="@string/lozinka_hint" 
+        android:inputType="textPassword"/>
 
     <TextView
         android:id="@+id/textView1"
@@ -35,7 +36,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="Korisničko ime"
+        android:text="@string/kor_ime"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#2F9146" />
 
@@ -50,14 +51,14 @@
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/lozinka2"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/lozinka"
         android:layout_below="@+id/lozinka"
         android:layout_marginTop="17dp"
         android:ems="10"
-        android:hint="Ponovite lozinku"
+        android:hint="@string/ponovna_lozinka"
         android:inputType="textPassword" />
 
     <EditText
@@ -68,7 +69,7 @@
         android:layout_below="@+id/textView1"
         android:layout_marginTop="14dp"
         android:ems="10"
-        android:hint="Unesite korisničko ime"
+        android:hint="@string/kor_ime_hint"
         android:inputType="textPersonName" />
 
     <TextView
@@ -77,7 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/email"
         android:layout_centerHorizontal="true"
-        android:text="E-mail"
+        android:text="@string/email"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#2F9146" />
 
@@ -88,7 +89,7 @@
         android:layout_below="@+id/korisnicko_ime"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="42dp"
-        android:text="Lozinka"
+        android:text="@string/lozinka"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#2F9146" />
 

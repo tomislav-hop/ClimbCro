@@ -415,34 +415,41 @@ containing a value of this type.
         public static final int ic_plusone_standard_off_client=0x7f020020;
         public static final int ic_plusone_tall_off_client=0x7f020021;
         public static final int icon=0x7f020022;
-        public static final int powered_by_google_dark=0x7f020023;
-        public static final int powered_by_google_light=0x7f020024;
-        public static final int rock_climb=0x7f020025;
+        public static final int kontrole=0x7f020023;
+        public static final int pause_button=0x7f020024;
+        public static final int play_button=0x7f020025;
+        public static final int powered_by_google_dark=0x7f020026;
+        public static final int powered_by_google_light=0x7f020027;
+        public static final int rock_climb=0x7f020028;
+        public static final int stop_button=0x7f020029;
     }
     public static final class id {
-        public static final int action_example=0x7f070026;
-        public static final int action_settings=0x7f070025;
+        public static final int action_example=0x7f070029;
+        public static final int action_settings=0x7f070028;
         public static final int book_now=0x7f070010;
-        public static final int btnDodajKorisnika=0x7f07001f;
+        public static final int btnDodajKorisnika=0x7f070021;
+        public static final int button1=0x7f07001a;
         public static final int buyButton=0x7f07000a;
         public static final int buy_now=0x7f07000f;
         public static final int buy_with_google=0x7f07000e;
         public static final int classic=0x7f070011;
         public static final int container=0x7f070015;
         public static final int drawer_layout=0x7f070014;
-        public static final int editText1=0x7f070022;
-        public static final int email=0x7f070021;
+        public static final int editText1=0x7f070027;
+        public static final int email=0x7f070023;
         public static final int grayscale=0x7f070012;
-        public static final int gumb_registriraj_se=0x7f070019;
+        public static final int gumb_registriraj_se=0x7f07001f;
         public static final int holo_dark=0x7f070005;
         public static final int holo_light=0x7f070006;
         public static final int hybrid=0x7f070004;
-        public static final int imageView1=0x7f07001e;
-        public static final int korisnicko_ime=0x7f070023;
-        public static final int logIn=0x7f07001c;
-        public static final int lozinka=0x7f070020;
-        public static final int map=0x7f070018;
+        public static final int imageView1=0x7f07001b;
+        public static final int korisnicko_ime=0x7f070025;
+        public static final int logIn=0x7f070020;
+        public static final int lozinka=0x7f070022;
+        public static final int lozinka2=0x7f070024;
+        public static final int map=0x7f070019;
         public static final int match_parent=0x7f07000c;
+        public static final int moje_rute=0x7f070018;
         public static final int monochrome=0x7f070013;
         public static final int navigation_drawer=0x7f070016;
         public static final int none=0x7f070000;
@@ -454,9 +461,9 @@ containing a value of this type.
         public static final int strict_sandbox=0x7f070009;
         public static final int terrain=0x7f070003;
         public static final int textView1=0x7f070017;
-        public static final int textView2=0x7f07001b;
-        public static final int textView3=0x7f070024;
-        public static final int username=0x7f07001a;
+        public static final int textView2=0x7f07001e;
+        public static final int textView3=0x7f070026;
+        public static final int username=0x7f07001c;
         public static final int userpass=0x7f07001d;
         public static final int wrap_content=0x7f07000d;
     }
@@ -482,6 +489,7 @@ containing a value of this type.
         public static final int action_example=0x7f05002b;
         public static final int action_settings=0x7f05002c;
         public static final int app_name=0x7f050023;
+        public static final int checkpoint=0x7f050035;
         /**   Text for notification shown when the Android Wear apps needs to be updated. Only shown on the wearable. [CHAR LIMIT=NONE] 
          */
         public static final int common_android_wear_notification_needs_update_text=0x7f050009;
@@ -585,6 +593,7 @@ containing a value of this type.
         public static final int create_calendar_title=0x7f050004;
         public static final int decline=0x7f050003;
         public static final int detalji_rute=0x7f050034;
+        public static final int email=0x7f05003a;
         public static final int gumb_prijava=0x7f05002d;
         public static final int kor_ime=0x7f05002e;
         public static final int kor_ime_hint=0x7f05002f;
@@ -593,6 +602,10 @@ containing a value of this type.
         public static final int moje_rute=0x7f050032;
         public static final int navigation_drawer_close=0x7f05002a;
         public static final int navigation_drawer_open=0x7f050029;
+        public static final int odaberite_rutu=0x7f050037;
+        public static final int opis_kontrole=0x7f050038;
+        public static final int ponovna_lozinka=0x7f050039;
+        public static final int registracija=0x7f050036;
         public static final int store_picture_message=0x7f050001;
         public static final int store_picture_title=0x7f050000;
         public static final int title_section1=0x7f050024;

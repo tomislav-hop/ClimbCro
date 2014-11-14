@@ -1,3 +1,4 @@
+
 package hr.foi.air.climbcro;
 
 
@@ -15,6 +16,13 @@ import android.widget.Toast;
  * Klasa koja se pokreæe prilikom otvaranja aplikacije.
  * U ovoj klasi provjerava se ispravnos podataka za prijavu u aplikaciju
  * te se preusmjerava na glavnu klasu aplikacije.
+ * 
+ * 
+ * Podaci za logiranje: 
+ * 
+ * Username: admin
+ * Password: 0000
+ * 
  * @author Hrgar
  *
  */
@@ -27,6 +35,8 @@ public class LoginActivity extends Activity {
 		setContentView(R.layout.login);
 		
 		super.onCreate(savedInstanceState);
+		
+		Toast.makeText(this, "Podaci za logiranje\n Password: admin \n Username: 0000", Toast.LENGTH_LONG).show();
 	}
 
 	@Override

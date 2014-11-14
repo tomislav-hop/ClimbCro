@@ -2,25 +2,28 @@
 <resources>
 
     <string name="app_name">ClimbCro</string>
-    <string name="title_section1">Moje rute</string>
+    <string name="title_section1">Statistika</string>
     <string name="title_section2">Trenutna ruta</string>
-    <string name="title_section3">Detalji rute</string>
-     <string name="title_section4">Google maps</string>
-      <string name="title_section5">Karta activiti</string>
+    <string name="title_section3">Moje rute</string>
+    <string name="title_section4">Snimaj rutu</string>
+    <string name="title_section5">Izlaz</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Postavke</string>
     <string name="action_settings">About us</string>
-    <string name="gumb_prijava">Pošalji</string>
-     <string name="kor_ime">Korisničko ime</string>
-     
-     <string name="kor_ime_hint">Unesite korisničko ime</string>
-     <string name="lozinka">Lozinka</string>
-     <string name="lozinka_hint">Unesite lozinku</string>
-      <string name="moje_rute">Moje rute</string>
-      
-       <string name="trenutna_ruta">Trenutna ruta</string>
-       <string name="detalji_rute">Detalji rute</string>
-    
+    <string name="gumb_prijava">Prijava</string>
+    <string name="kor_ime">Korisničko ime</string>
+    <string name="kor_ime_hint">Unesite korisničko ime</string>
+    <string name="lozinka">Lozinka</string>
+    <string name="lozinka_hint">Unesite lozinku</string>
+    <string name="moje_rute">Moje rute</string>
+    <string name="trenutna_ruta">Trenutna ruta</string>
+    <string name="detalji_rute">Detalji rute</string>
+    <string name="checkpoint">Checkpoint</string>
+    <string name="registracija">Registriraj se</string>
+    <string name="odaberite_rutu">Odaberite rutu za prikaz detalja</string>
+    <string name="opis_kontrole">Kontrole za snimanje rute</string>
+    <string name="ponovna_lozinka">Ponovite lozinku</string>
+    <string name="email">E-mail</string>
 
 </resources>

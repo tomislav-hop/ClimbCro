@@ -1,5 +1,7 @@
 package hr.foi.air.climbcro;
 
+import hr.foi.air.climbcro.wsl.JSONParser;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,6 +16,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class RegistrationActivity extends Activity {
 
@@ -24,6 +27,7 @@ public class RegistrationActivity extends Activity {
 	JSONParser jsonParser = new JSONParser();
 	EditText korisnicko_ime;
 	EditText lozinka;
+	EditText lozinka2;
 	EditText email;
 	
 	// link na php skriptu
@@ -40,6 +44,7 @@ public class RegistrationActivity extends Activity {
 		// hvatanje unesenoga
 		korisnicko_ime = (EditText) findViewById(R.id.korisnicko_ime);
 		lozinka = (EditText) findViewById(R.id.lozinka);
+		lozinka2 = (EditText) findViewById(R.id.lozinka2);
 		email = (EditText) findViewById(R.id.email);
 
 		// button
@@ -51,7 +56,19 @@ public class RegistrationActivity extends Activity {
 			@Override
 			public void onClick(View view) {
 				// pozovi funkciju za kreiranje korisnika
-				new KreirajNovogKorisnika().execute();
+				//provjera dali su lozinke jednake
+				if(lozinka.getText().toString().equals(lozinka2.getText().toString()))
+				{
+					new KreirajNovogKorisnika().execute();
+					
+				}
+				
+				else 
+				{
+					Toast.makeText(RegistrationActivity.this, "Lozinke nisu jednake", Toast.LENGTH_LONG).show();
+				}
+				
+				
 			}
 		});
 	}
@@ -68,7 +85,7 @@ public class RegistrationActivity extends Activity {
 		protected void onPreExecute() {
 			super.onPreExecute();
 			pDialog = new ProgressDialog(RegistrationActivity.this);
-			pDialog.setMessage("Creating Product..");
+			pDialog.setMessage("Kreiranje raèuna...");
 			pDialog.setIndeterminate(false);
 			pDialog.setCancelable(true);
 			pDialog.show();
